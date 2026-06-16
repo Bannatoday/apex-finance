@@ -15,7 +15,18 @@ connectDB();
 
 // Security middleware
 app.use(helmet({
-  crossOriginResourcePolicy: { policy: 'cross-origin' }
+  crossOriginResourcePolicy: { policy: 'cross-origin' },
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
+      styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+      fontSrc: ["'self'", "https://fonts.gstatic.com"],
+      imgSrc: ["'self'", "data:", "blob:", "https://img.youtube.com", "https://i.ytimg.com"],
+      frameSrc: ["'self'", "https://www.youtube.com", "https://youtube.com"],
+      connectSrc: ["'self'"],
+    },
+  },
 }));
 app.use(mongoSanitize());
 
