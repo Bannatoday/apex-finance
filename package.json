@@ -1,0 +1,14 @@
+{
+  "name": "apex-finance",
+  "version": "1.0.0",
+  "description": "Apex Finance - Loan Brokerage Platform",
+  "scripts": {
+    "start": "cd server && node index.js",
+    "build": "cd client && npm install && npm run build",
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
