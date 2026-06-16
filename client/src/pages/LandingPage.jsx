@@ -199,29 +199,14 @@ export default function LandingPage() {
               return (
                 <div key={i} className="lp-testimonial-card">
                   <div className="lp-video-placeholder">
-                    {playingVideo === i ? (
-                      <iframe
-                        className="lp-video-iframe"
-                        src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
-                        title={`Testimonial ${i + 1}`}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      />
-                    ) : (
-                      <button
-                        onClick={() => setPlayingVideo(i)}
-                        className="lp-video-thumb-btn"
-                        aria-label={`Play testimonial ${i + 1}`}
-                      >
-                        <img
-                          src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-                          alt=""
-                          className="lp-video-thumb"
-                        />
-                        <div className="lp-video-overlay" />
-                        <div className="lp-play-btn"><PlayIcon /></div>
-                      </button>
-                    )}
+                    <iframe
+                      className="lp-video-iframe"
+                      src={`https://www.youtube-nocookie.com/embed/${videoId}?rel=0`}
+                      title={`Testimonial ${i + 1}`}
+                      frameBorder="0"
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
                   </div>
                 </div>
               );

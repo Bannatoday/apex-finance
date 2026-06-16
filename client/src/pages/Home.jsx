@@ -417,36 +417,14 @@ export default function Home() {
                   className="bg-white rounded-2xl overflow-hidden shadow-sm border border-border/50 hover:shadow-xl transition-all duration-300"
                 >
                   <div className="relative aspect-video bg-dark">
-                    {playingVideo === idx ? (
-                      <iframe
-                        className="absolute inset-0 w-full h-full"
-                        src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
-                        title={vt.title}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      />
-                    ) : (
-                      <button
-                        onClick={() => setPlayingVideo(idx)}
-                        className="absolute inset-0 w-full h-full group cursor-pointer"
-                        aria-label={`Play video: ${vt.title}`}
-                      >
-                        <img
-                          src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-                          alt=""
-                          className="w-full h-full object-cover"
-                          loading="lazy"
-                        />
-                        <div className="absolute inset-0 bg-dark/30 group-hover:bg-dark/40 transition-colors" />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
-                            <svg className="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                              <path d="M8 5v14l11-7z" />
-                            </svg>
-                          </div>
-                        </div>
-                      </button>
-                    )}
+                    <iframe
+                      className="absolute inset-0 w-full h-full"
+                      src={`https://www.youtube-nocookie.com/embed/${videoId}?rel=0`}
+                      title={`Testimonial ${idx + 1}`}
+                      frameBorder="0"
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
                   </div>
                 </motion.div>
               );
