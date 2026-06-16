@@ -214,10 +214,9 @@ export default function LandingPage() {
                         aria-label={`Play testimonial ${i + 1}`}
                       >
                         <img
-                          src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
-                          alt={`Testimonial ${i + 1}`}
+                          src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+                          alt=""
                           className="lp-video-thumb"
-                          onError={(e) => { e.target.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`; }}
                         />
                         <div className="lp-video-overlay" />
                         <div className="lp-play-btn"><PlayIcon /></div>

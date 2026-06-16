@@ -432,11 +432,10 @@ export default function Home() {
                         aria-label={`Play video: ${vt.title}`}
                       >
                         <img
-                          src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
-                          alt={vt.title}
+                          src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+                          alt=""
                           className="w-full h-full object-cover"
                           loading="lazy"
-                          onError={(e) => { e.target.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`; }}
                         />
                         <div className="absolute inset-0 bg-dark/30 group-hover:bg-dark/40 transition-colors" />
                         <div className="absolute inset-0 flex items-center justify-center">
