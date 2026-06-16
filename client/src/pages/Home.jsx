@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { HiShieldCheck, HiClock, HiCurrencyDollar, HiUserGroup, HiClipboardCheck, HiEye, HiArrowRight } from 'react-icons/hi';
-import { FaCalculator, FaHandshake, FaUniversity, FaCar, FaGraduationCap, FaCreditCard, FaBuilding, FaChartLine } from 'react-icons/fa';
+import { FaCalculator, FaHandshake, FaUniversity, FaCar, FaGraduationCap, FaCreditCard, FaBuilding, FaChartLine, FaShieldAlt } from 'react-icons/fa';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -158,21 +158,33 @@ export default function Home() {
               className="hidden lg:block"
             >
               <div className="relative">
-                {/* Floating cards */}
+                {/* Trust card */}
                 <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-8 border border-white/20 shadow-2xl">
                   <div className="text-center mb-6">
-                    <p className="text-gray-300 text-sm mb-1">You could borrow up to</p>
-                    <p className="text-5xl font-heading font-bold text-white">$500,000</p>
-                    <p className="text-secondary text-sm mt-2">Starting at 4.99% APR</p>
+                    <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <FaShieldAlt className="text-secondary text-2xl" />
+                    </div>
+                    <p className="text-2xl font-heading font-bold text-white">Your Financial Goals,<br/>Our Expertise</p>
+                    <p className="text-gray-300 text-sm mt-3">Trusted by thousands of borrowers nationwide</p>
                   </div>
-                  <div className="grid grid-cols-2 gap-4 mt-8">
+                  <div className="grid grid-cols-2 gap-4 mt-6">
                     <div className="bg-white/10 rounded-xl p-4 text-center">
                       <p className="text-2xl font-bold text-white">24hr</p>
                       <p className="text-xs text-gray-300">Fast Approval</p>
                     </div>
                     <div className="bg-white/10 rounded-xl p-4 text-center">
-                      <p className="text-2xl font-bold text-white">0</p>
+                      <p className="text-2xl font-bold text-white">Zero</p>
                       <p className="text-xs text-gray-300">Hidden Fees</p>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4 mt-4">
+                    <div className="bg-white/10 rounded-xl p-4 text-center">
+                      <p className="text-2xl font-bold text-white">5+</p>
+                      <p className="text-xs text-gray-300">Loan Types</p>
+                    </div>
+                    <div className="bg-white/10 rounded-xl p-4 text-center">
+                      <p className="text-2xl font-bold text-white">A+</p>
+                      <p className="text-xs text-gray-300">Rated Service</p>
                     </div>
                   </div>
                 </div>
@@ -181,7 +193,7 @@ export default function Home() {
                   animate={{ y: [0, -8, 0] }}
                   transition={{ repeat: Infinity, duration: 2 }}
                 >
-                  ✓ 95% Approval Rate
+                  ✓ Trusted Nationwide
                 </motion.div>
               </div>
             </motion.div>
