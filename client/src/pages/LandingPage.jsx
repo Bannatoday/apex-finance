@@ -198,16 +198,21 @@ export default function LandingPage() {
               const videoId = getYouTubeId(url);
               return (
                 <div key={i} className="lp-testimonial-card">
-                  <div className="lp-video-placeholder">
-                    <iframe
-                      className="lp-video-iframe"
-                      src={`https://www.youtube-nocookie.com/embed/${videoId}?rel=0`}
-                      title={`Testimonial ${i + 1}`}
-                      frameBorder="0"
-                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
+                  <a
+                    href={`https://www.youtube.com/watch?v=${videoId}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="lp-video-placeholder"
+                    style={{ display: 'block', textDecoration: 'none', position: 'relative' }}
+                  >
+                    <img
+                      src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+                      alt=""
+                      className="lp-video-thumb"
                     />
-                  </div>
+                    <div className="lp-video-overlay" />
+                    <div className="lp-play-btn"><PlayIcon /></div>
+                  </a>
                 </div>
               );
             })}
