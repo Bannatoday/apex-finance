@@ -16,6 +16,7 @@ connectDB();
 // Security middleware
 app.use(helmet({
   crossOriginResourcePolicy: { policy: 'cross-origin' },
+  crossOriginEmbedderPolicy: false,
   contentSecurityPolicy: false,
 }));
 app.use(mongoSanitize());
