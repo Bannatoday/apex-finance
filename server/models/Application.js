@@ -15,12 +15,12 @@ const applicationSchema = new mongoose.Schema({
     lastName: { type: String, required: true, trim: true },
     email: { type: String, required: true, trim: true, lowercase: true },
     phone: { type: String, required: true, trim: true },
-    dob: { type: String, required: true },
-    ssnLast4: { type: String, required: true, minlength: 4, maxlength: 4 },
-    address: { type: String, required: true, trim: true },
-    city: { type: String, required: true, trim: true },
-    state: { type: String, required: true, trim: true },
-    zip: { type: String, required: true, trim: true }
+    dob: { type: String, default: '' },
+    ssnLast4: { type: String, default: '', minlength: 0, maxlength: 4 },
+    address: { type: String, default: '', trim: true },
+    city: { type: String, default: '', trim: true },
+    state: { type: String, default: '', trim: true },
+    zip: { type: String, default: '', trim: true }
   },
   loanDetails: {
     type: { 
@@ -30,20 +30,20 @@ const applicationSchema = new mongoose.Schema({
     },
     amount: { type: Number, required: true, min: 1000, max: 500000 },
     purpose: { type: String, required: true, trim: true },
-    tenure: { type: Number, required: true, min: 6, max: 360 }
+    tenure: { type: Number, default: 60, min: 6, max: 360 }
   },
   financialInfo: {
     employmentStatus: { 
       type: String, 
-      required: true,
-      enum: ['employed', 'self-employed', 'unemployed', 'retired', 'student']
+      default: '',
+      enum: ['employed', 'self-employed', 'unemployed', 'retired', 'student', '']
     },
     employerName: { type: String, trim: true },
-    monthlyIncome: { type: Number, required: true, min: 0 },
+    monthlyIncome: { type: Number, default: 0, min: 0 },
     creditScore: { 
       type: String, 
-      required: true,
-      enum: ['excellent-750+', 'good-700-749', 'fair-650-699', 'poor-below-650', 'no-credit']
+      default: '',
+      enum: ['excellent-750+', 'good-700-749', 'fair-650-699', 'poor-below-650', 'no-credit', '']
     },
     existingDebt: { type: Number, default: 0, min: 0 }
   },
