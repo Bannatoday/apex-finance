@@ -21,6 +21,7 @@ const TrackApplication = lazy(() => import('./pages/TrackApplication'));
 const Login = lazy(() => import('./pages/Login'));
 const UserDashboard = lazy(() => import('./pages/UserDashboard'));
 const LandingPage = lazy(() => import('./pages/LandingPage'));
+const DebtConsolidation = lazy(() => import('./pages/DebtConsolidation'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 // Admin pages
@@ -58,6 +59,7 @@ function App() {
 
           {/* Standalone pages (no layout wrapper) */}
           <Route path="/lp" element={<LandingPage />} />
+          <Route path="/debt-consolidation" element={<DebtConsolidation />} />
           <Route path="/login" element={<Login />} />
 
           {/* Admin routes */}

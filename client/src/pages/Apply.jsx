@@ -39,6 +39,9 @@ export default function Apply() {
     const ln = searchParams.get('lastName');
     const em = searchParams.get('email');
     const ph = searchParams.get('phone');
+    const loanType = searchParams.get('type');
+    const loanAmount = searchParams.get('amount');
+    const loanPurpose = searchParams.get('purpose');
     if (fn || ln || em || ph) {
       setPersonal(p => ({
         ...p,
@@ -47,8 +50,13 @@ export default function Apply() {
         ...(em && { email: em }),
         ...(ph && { phone: ph }),
       }));
-      // Landing page is mortgage-focused
-      setLoan(l => ({ ...l, type: 'mortgage' }));
+      // Set loan type based on source landing page
+      setLoan(l => ({
+        ...l,
+        type: loanType || 'mortgage',
+        ...(loanAmount && { amount: Number(loanAmount) }),
+        ...(loanPurpose && { purpose: loanPurpose }),
+      }));
     }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 

@@ -6,6 +6,7 @@ const quickLinks = [
   { name: 'Home', path: '/' },
   { name: 'About Us', path: '/about' },
   { name: 'Loan Products', path: '/loans' },
+  { name: 'Debt Consolidation', path: '/debt-consolidation' },
   { name: 'Apply Now', path: '/apply' },
   { name: 'EMI Calculator', path: '/calculator' },
 ];
