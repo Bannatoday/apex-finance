@@ -4,6 +4,7 @@ import Layout from './components/layout/Layout';
 import AdminLayout from './components/layout/AdminLayout';
 import LoadingScreen from './components/common/LoadingScreen';
 import ScrollToTop from './components/common/ScrollToTop';
+import TawkControl from './components/common/TawkControl';
 
 // Public pages
 const Home = lazy(() => import('./pages/Home'));
@@ -37,6 +38,7 @@ function App() {
   return (
     <>
       <ScrollToTop />
+      <TawkControl />
       <Suspense fallback={<LoadingScreen />}>
         <Routes>
           {/* Public routes */}
