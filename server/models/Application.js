@@ -87,7 +87,7 @@ applicationSchema.pre('validate', async function(next) {
   if (this.isNew && !this.applicationId) {
     const year = new Date().getFullYear();
     const count = await mongoose.model('Application').countDocuments();
-    const paddedCount = String(count + 1).padStart(4, '0');
+    const paddedCount = String(count + 1 + 1120).padStart(4, '0');
     this.applicationId = `APF-${year}-${paddedCount}`;
   }
   next();
