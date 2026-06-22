@@ -85,4 +85,17 @@ app.listen(PORT, () => {
   console.log(`   Environment: ${process.env.NODE_ENV || 'development'}`);
   console.log(`   API: http://localhost:${PORT}/api`);
   console.log(`   Health: http://localhost:${PORT}/api/health\n`);
+
+  // Keep server awake on Render free tier (ping every 14 minutes)
+  if (process.env.NODE_ENV === 'production' && process.env.RENDER_EXTERNAL_URL) {
+    const url = `${process.env.RENDER_EXTERNAL_URL}/api/health`;
+    setInterval(async () => {
+      try {
+        await fetch(url);
+        console.log('🏓 Keep-alive ping sent');
+      } catch (err) {
+        console.error('Keep-alive ping failed:', err.message);
+      }
+    }, 14 * 60 * 1000); // every 14 minutes
+  }
 });
