@@ -30,7 +30,7 @@ const blogPostSchema = new mongoose.Schema({
   category: {
     type: String,
     required: true,
-    enum: ['loan-tips', 'credit-score', 'business-financing', 'market-updates', 'first-time-borrowers']
+    enum: ['loan-tips', 'credit-score', 'business-financing', 'market-updates', 'first-time-borrowers', 'personal-finance', 'debt-consolidation']
   },
   tags: [{
     type: String,

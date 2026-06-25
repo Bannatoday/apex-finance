@@ -140,6 +140,96 @@
   .blog-content strong {
     color: var(--color-dark);
   }
+  .blog-content blockquote {
+    border-left: 4px solid var(--color-secondary);
+    background: rgba(201, 168, 76, 0.06);
+    padding: 20px 24px;
+    margin: 1.5em 0;
+    border-radius: 0 10px 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-dark);
+  }
+  .blog-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+  }
+  .blog-content thead {
+    background: var(--color-primary);
+    color: #fff;
+  }
+  .blog-content th {
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .blog-content td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .blog-content tbody tr:nth-child(even) {
+    background: rgba(27, 58, 107, 0.03);
+  }
+  .blog-content tbody tr:hover {
+    background: rgba(201, 168, 76, 0.06);
+  }
+  .blog-content .blog-lead {
+    font-size: 1.15rem;
+    color: var(--color-muted);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 1.2em;
+    margin-bottom: 1.5em;
+  }
+  .blog-content .blog-label {
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    color: var(--color-muted);
+    margin-bottom: 0.5em;
+  }
+  .blog-content .blog-disclaimer {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+    border-top: 1px solid var(--color-border);
+    padding-top: 1.5em;
+    margin-top: 2em;
+  }
+  .blog-content .blog-inline-cta {
+    background: linear-gradient(135deg, #f0f4fa 0%, #faf6ec 100%);
+    border: 1px solid rgba(201, 168, 76, 0.3);
+    border-left: 4px solid #C9A84C;
+    border-radius: 0 12px 12px 0;
+    padding: 24px 28px;
+    margin: 2em 0;
+    text-align: left;
+  }
+  .blog-content .blog-inline-cta-text {
+    font-size: 1.05rem;
+    color: var(--color-dark);
+    margin-bottom: 16px !important;
+    line-height: 1.6;
+  }
+  .blog-content .blog-inline-cta-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #1B3A6B, #0D2340);
+    color: #fff !important;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none !important;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 3px 12px rgba(27, 58, 107, 0.25);
+  }
+  .blog-content .blog-inline-cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(27, 58, 107, 0.35);
+  }
 
   /* React Quill editor */
   .ql-editor {

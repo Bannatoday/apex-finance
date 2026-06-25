@@ -1,12 +1,57 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { HiClock, HiCalendar, HiArrowLeft, HiShare } from 'react-icons/hi';
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { HiClock, HiCalendar, HiArrowLeft, HiShare, HiArrowRight } from 'react-icons/hi';
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaShieldAlt } from 'react-icons/fa';
 import api from '../api';
 
 const fadeInUp = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
-const catLabels = { 'loan-tips': 'Loan Tips', 'credit-score': 'Credit Score', 'business-financing': 'Business Financing', 'market-updates': 'Market Updates', 'first-time-borrowers': 'First-Time Borrowers' };
+const catLabels = { 'loan-tips': 'Loan Tips', 'credit-score': 'Credit Score', 'business-financing': 'Business Financing', 'market-updates': 'Market Updates', 'first-time-borrowers': 'First-Time Borrowers', 'personal-finance': 'Personal Finance', 'debt-consolidation': 'Debt Consolidation' };
+
+// CTA Component for debt consolidation posts
+const DebtConsolidationCTA = () => (
+  <div style={{
+    background: 'linear-gradient(135deg, #1B3A6B 0%, #0D2340 100%)',
+    borderRadius: '16px',
+    padding: '40px 32px',
+    marginTop: '40px',
+    position: 'relative',
+    overflow: 'hidden',
+    border: '1px solid rgba(201, 168, 76, 0.3)',
+  }}>
+    <div style={{
+      position: 'absolute', top: 0, right: 0, width: '200px', height: '200px',
+      background: 'radial-gradient(circle, rgba(201,168,76,0.15) 0%, transparent 70%)',
+    }} />
+    <div style={{ position: 'relative', zIndex: 1 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+        <FaShieldAlt style={{ color: '#C9A84C', fontSize: '18px' }} />
+        <span style={{ color: '#C9A84C', fontSize: '13px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase' }}>Free · No Credit Impact · 60 Seconds</span>
+      </div>
+      <h3 style={{ color: '#fff', fontSize: '24px', fontWeight: 700, lineHeight: 1.3, margin: '0 0 12px' }}>
+        See How Much You Could Save on Your Credit Card Debt
+      </h3>
+      <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '15px', lineHeight: 1.6, margin: '0 0 24px', maxWidth: '480px' }}>
+        Check your eligibility in under 60 seconds. No hard credit pull — your score stays untouched.
+      </p>
+      <Link
+        to="/debt-consolidation"
+        style={{
+          display: 'inline-flex', alignItems: 'center', gap: '8px',
+          background: 'linear-gradient(135deg, #C9A84C, #B8943F)',
+          color: '#0D2340', padding: '14px 28px', borderRadius: '10px',
+          fontWeight: 700, fontSize: '15px', textDecoration: 'none',
+          transition: 'transform 0.2s, box-shadow 0.2s',
+          boxShadow: '0 4px 15px rgba(201, 168, 76, 0.3)',
+        }}
+        onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(201,168,76,0.4)'; }}
+        onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 15px rgba(201,168,76,0.3)'; }}
+      >
+        Check My Options <HiArrowRight style={{ fontSize: '16px' }} />
+      </Link>
+    </div>
+  </div>
+);
 
 export default function BlogPost() {
   const { slug } = useParams();
@@ -70,6 +115,11 @@ export default function BlogPost() {
             <motion.div className="lg:col-span-3" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}>
               <div className="bg-white rounded-2xl shadow-sm border border-border/50 p-8 sm:p-10">
                 <div className="blog-content prose max-w-none" dangerouslySetInnerHTML={{ __html: post.content }} />
+
+                {/* CTA for debt consolidation posts */}
+                {(post.tags?.some(t => t.toLowerCase().includes('debt consolidation')) || post.category === 'personal-finance' || post.category === 'debt-consolidation') && (
+                  <DebtConsolidationCTA />
+                )}
               </div>
 
               {/* Share */}
