@@ -3,6 +3,7 @@ import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiUser, HiCurrencyDollar, HiOfficeBuilding, HiCheckCircle, HiArrowRight, HiArrowLeft, HiClipboardCopy, HiLockClosed } from 'react-icons/hi';
 import api from '../api';
+import { tbolaLead } from '../utils/taboola';
 
 const steps = [
   { title: 'Personal Info', icon: HiUser },
@@ -96,6 +97,7 @@ export default function Apply() {
       });
       setAppId(res.data.applicationId);
       setSubmitted(true);
+      tbolaLead(); // Taboola conversion
     } catch (err) {
       setError(err.response?.data?.message || 'Failed to submit application. Please try again.');
     } finally {

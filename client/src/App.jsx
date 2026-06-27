@@ -1,10 +1,11 @@
-import { Routes, Route } from 'react-router-dom';
-import { lazy, Suspense } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { lazy, Suspense, useEffect } from 'react';
 import Layout from './components/layout/Layout';
 import AdminLayout from './components/layout/AdminLayout';
 import LoadingScreen from './components/common/LoadingScreen';
 import ScrollToTop from './components/common/ScrollToTop';
 import TawkControl from './components/common/TawkControl';
+import { tbolaPageView } from './utils/taboola';
 
 // Public pages
 const Home = lazy(() => import('./pages/Home'));
@@ -35,11 +36,20 @@ const BlogManagement = lazy(() => import('./pages/admin/BlogManagement'));
 const BlogEditor = lazy(() => import('./pages/admin/BlogEditor'));
 const Settings = lazy(() => import('./pages/admin/Settings'));
 
+function TaboolaPageTracker() {
+  const location = useLocation();
+  useEffect(() => {
+    tbolaPageView();
+  }, [location.pathname]);
+  return null;
+}
+
 function App() {
   return (
     <>
       <ScrollToTop />
       <TawkControl />
+      <TaboolaPageTracker />
       <Suspense fallback={<LoadingScreen />}>
         <Routes>
           {/* Public routes */}

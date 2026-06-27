@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import api from '../api';
+import { tbolaLead } from '../utils/taboola';
 import './DebtConsolidation.css';
 
 /* ─── Inline SVG Icons ─── */
@@ -147,6 +148,7 @@ export default function DebtConsolidation() {
       });
       setAppId(res.data.applicationId || '');
       setQuizStep(3); // Show Thank You screen
+      tbolaLead(); // Taboola conversion
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch (err) {
       setSubmitError(err.response?.data?.message || 'Something went wrong. Please try again.');

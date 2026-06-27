@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { tbolaLead } from '../utils/taboola';
 import './LandingPage.css';
 
 /* ─── icons (inline SVGs to avoid external deps) ─── */
@@ -96,6 +97,7 @@ export default function LandingPage() {
     const phone = fd.get('phone') || '';
     const [firstName = '', ...rest] = name.trim().split(' ');
     const lastName = rest.join(' ');
+    tbolaLead(); // Taboola conversion
     navigate(`/apply?firstName=${encodeURIComponent(firstName)}&lastName=${encodeURIComponent(lastName)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}`);
   };
 
