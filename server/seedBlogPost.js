@@ -20,13 +20,17 @@ const seedDebtPost = async () => {
       slug: 'credit-card-debt-consolidation-strategy',
       content: `<p class="blog-label"><strong>PERSONAL FINANCE · ADVERTORIAL · Updated June 2026</strong></p>
 
+<p class="blog-byline"><strong>By Sarah Mitchell</strong> | Personal Finance Contributor</p>
+
+<p class="blog-disclosure" style="background: #f8f9fa; border-left: 3px solid #c9a84c; padding: 12px 16px; margin: 20px 0; font-size: 0.85rem; color: #555;"><em>Apex Finance LLC is a loan matching service, not a direct lender. Loan terms are set by individual lenders in our network.</em></p>
+
 <p class="blog-lead"><em>The strategy quietly saving thousands of households $300+ per month — and why your bank isn't advertising it</em></p>
 
 <p>If you're making minimum payments on your credit cards every month, you're probably aware it feels like you're not making much progress. But here's the part most people don't realize: you may be paying thousands of dollars more than you have to — not because of the debt itself, but because of the interest rate attached to it.</p>
 
-<p>The average credit card in America currently carries an APR between 21% and 27%. Meanwhile, a debt consolidation loan — available to a much wider range of credit profiles than most people assume — is available with rates starting from as low as 4.5% APR. That gap is where most of your money is going every single month.</p>
+<p>The average credit card in America currently carries an APR between 21% and 27%. Meanwhile, a debt consolidation loan — available to a much wider range of credit profiles than most people assume — is available with rates starting from as low as 4.5% APR*. That gap is where most of your money is going every single month.</p>
 
-<blockquote><strong>The average US household pays $1,380 in credit card interest every year — most of which can be eliminated through consolidation.</strong></blockquote>
+<blockquote><strong>The average US household pays $1,380 in credit card interest every year<sup>1</sup> — most of which can be eliminated through consolidation.</strong></blockquote>
 
 <h2>The minimum payment trap — the math your bank doesn't show you</h2>
 
@@ -36,7 +40,7 @@ const seedDebtPost = async () => {
 
 <h2>What debt consolidation actually is — in plain terms</h2>
 
-<p>A debt consolidation loan is simply a personal loan that you use to pay off all your existing credit card balances in one shot. Instead of paying three or four cards at 21–27% APR, you're now making one monthly payment on a single loan — with rates starting from as low as 4.5% APR.</p>
+<p>A debt consolidation loan is simply a personal loan that you use to pay off all your existing credit card balances in one shot. Instead of paying three or four cards at 21–27% APR, you're now making one monthly payment on a single loan — with rates starting from as low as 4.5% APR*.</p>
 
 <p>That's it. No complicated process. No negotiating with creditors. No dramatic effect on your credit history. The loan pays off your cards and you owe the new lender instead, at a significantly lower rate.</p>
 
@@ -47,7 +51,7 @@ const seedDebtPost = async () => {
 <tr><th></th><th>Minimum payments on 3 credit cards</th><th>Debt consolidation loan</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Interest rate</strong></td><td>23% avg APR</td><td>From 4.5% APR</td></tr>
+<tr><td><strong>Interest rate</strong></td><td>23% avg APR</td><td>From 4.5% APR*</td></tr>
 <tr><td><strong>Monthly payment</strong></td><td>~$540</td><td>~$337</td></tr>
 <tr><td><strong>Total interest paid</strong></td><td>$16,200+</td><td>$2,220</td></tr>
 <tr><td><strong>Payoff time</strong></td><td>20+ years</td><td>5 years</td></tr>
@@ -83,11 +87,13 @@ const seedDebtPost = async () => {
 
 <p>An eligibility check costs nothing and takes under a minute. The worst outcome is finding out you don't currently qualify — which is still useful information. The best outcome is a path to paying nearly <strong>$14,000 less</strong> over the life of your debt.</p>
 
-<p class="blog-disclaimer"><em>This is advertorial content. Loan terms vary by lender and applicant profile. 4.5% APR represents the starting rate and is subject to creditworthiness and other eligibility criteria. Always review full loan terms before accepting any offer.</em></p>`,
+<p class="blog-footnote" style="font-size: 0.8rem; color: #777; margin-top: 24px; padding-top: 16px; border-top: 1px solid #e5e7eb;"><sup>1</sup> Source: Federal Reserve Survey of Consumer Finances, 2025.</p>
+
+<p class="blog-disclaimer"><em>*4.5% APR represents the lowest starting rate available through our lender network and is subject to creditworthiness, loan amount, and other eligibility criteria. Actual rates range from 5.99% to 35.99% APR. This is advertorial content. Apex Finance LLC is a loan matching service, not a direct lender. Loan terms vary by lender and applicant profile. Always review full loan terms before accepting any offer.</em></p>`,
       excerpt: "The strategy quietly saving thousands of households $300+ per month in credit card interest — and why your bank isn't advertising it. Learn how debt consolidation could cut your payments and save you thousands.",
       category: 'personal-finance',
       tags: ['debt consolidation', 'credit card debt', 'personal finance', 'interest rates', 'advertorial'],
-      author: 'Financial Desk',
+      author: 'Sarah Mitchell',
       status: 'published',
       publishedAt: new Date('2026-06-25'),
       seo: {
