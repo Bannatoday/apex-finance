@@ -44,8 +44,8 @@ export default function About() {
               <h2 className="text-3xl font-heading font-bold text-dark mb-6">Empowering Financial Futures</h2>
               <div className="space-y-4 text-muted leading-relaxed text-base">
                 <p>Founded in 2019, Apex Finance was born from a simple belief: the loan process shouldn't be complicated, opaque, or intimidating. Our founder, Robert Mitchell, spent two decades in traditional banking and saw firsthand how the system failed everyday borrowers.</p>
-                <p>Today, we've helped over 1,000 clients secure more than $50 million in loans. From first-time homebuyers to established business owners, we connect people with the right lenders and the best terms available.</p>
-                <p>As a licensed loan brokerage, we work with a network of trusted lenders across the United States, ensuring our clients have access to competitive rates and flexible terms tailored to their unique financial situations.</p>
+                <p>Today, we've helped over 1,000 clients secure more than $50 million in loans. From first-time homebuyers to established business owners, we connect people with the right lenders and competitive terms.</p>
+                <p>As a licensed loan matching service, we work with a network of trusted lenders across the United States, helping our clients access competitive rates and flexible terms tailored to their unique financial situations.</p>
               </div>
             </motion.div>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-10">
@@ -125,7 +125,7 @@ export default function About() {
             <p className="text-xl font-heading font-bold text-secondary">Federally & State Compliant</p>
           </div>
           <p className="text-gray-400 text-sm mt-4 max-w-lg mx-auto">
-            Not a lender. Apex Finance connects borrowers with qualified lenders. All loan applications are subject to credit approval.
+            Not a lender. Apex Finance LLC is a loan matching service that connects borrowers with licensed lenders. We do not make credit decisions or issue loans. Not all applicants will qualify.
           </p>
         </div>
       </section>

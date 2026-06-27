@@ -17,6 +17,7 @@ const resourceLinks = [
   { name: 'Contact Us', path: '/contact' },
   { name: 'Privacy Policy', path: '/privacy' },
   { name: 'Terms & Conditions', path: '/terms' },
+  { name: 'Disclaimer', path: '/disclaimer' },
 ];
 
 const socialLinks = [
@@ -39,7 +40,7 @@ export default function Footer() {
               <h3 className="text-lg font-heading font-bold text-white">Apex Finance</h3>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Your trusted partner for personal, business, mortgage, auto, student loans, and debt consolidation. Fast approvals, competitive rates, and transparent process.
+              Apex Finance LLC is a free loan matching service that connects borrowers with a network of licensed lenders. We are not a direct lender and do not issue loans.
             </p>
             <div className="flex gap-3">
               {socialLinks.map(({ icon: Icon, url, label }) => (
@@ -135,9 +136,8 @@ export default function Footer() {
             <p className="text-gray-500 text-xs">
               © {new Date().getFullYear()} Apex Finance. All rights reserved.
             </p>
-            <p className="text-gray-500 text-xs max-w-xl">
-              Apex Finance | Not a lender. We connect borrowers with lenders. 
-              All loan applications are subject to credit approval. Terms and conditions apply.
+            <p className="text-gray-500 text-xs max-w-2xl leading-relaxed">
+              Apex Finance LLC is not a lender. We are a free loan matching service that connects borrowers with a network of licensed lenders. We do not make credit decisions or issue loans. Loan approval, terms, and rates are determined solely by the lender. Not all applicants will qualify. APR ranges from 5.99% to 35.99% depending on creditworthiness and lender terms.
             </p>
           </div>
         </div>

@@ -60,7 +60,7 @@ const compareData = [
 
 const trustBadges = [
   { icon: '🛡️', label: 'Federally Licensed', sub: 'Fully Compliant' },
-  { icon: '🏘️', label: 'Equal Housing', sub: 'Lender' },
+  { icon: '🔒', label: '256-bit SSL', sub: 'Encrypted' },
   { icon: '⭐', label: 'BBB Accredited', sub: 'A+ Rating' },
   { icon: '📄', label: '1,000+', sub: 'Clients Helped' },
   { icon: '📅', label: '5+ Years', sub: 'In Business' },
@@ -403,7 +403,7 @@ export default function DebtConsolidation() {
               </div>
             ))}
           </div>
-          <p className="dc-trust-text">Your personal information is protected with bank-level encryption and will only be used to match you with debt relief programs that fit your situation. We will never sell your data.</p>
+          <p className="dc-trust-text">Your personal information is protected with 256-bit SSL encryption and will only be used to match you with debt relief programs that fit your situation. We will never sell your data.</p>
         </div>
       </section>
 
@@ -450,12 +450,10 @@ export default function DebtConsolidation() {
             </div>
           </div>
           <div className="dc-footer-disclosures">
-            <p>Apex Finance | Federally & State Licensed | Equal Housing Lender</p>
-            <p>Not a lender. Apex Finance connects borrowers with qualified lending partners. All loan applications are subject to credit approval by the lending partner. Terms and conditions apply.</p>
+            <p>Apex Finance | Federally & State Licensed | Loan Matching Service</p>
+            <p>Apex Finance LLC is not a lender. We are a free loan matching service that connects borrowers with a network of licensed lenders. We do not make credit decisions or issue loans. Loan approval, terms, and rates are determined solely by the lender. Not all applicants will qualify.</p>
             <p>This content is for educational purposes only and does not constitute financial advice. Consult a licensed financial professional for advice specific to your situation.</p>
-            <p className="dc-footer-ehl">
-              <span style={{ fontSize: '1.2rem' }}>⌂</span> Equal Housing Lender
-            </p>
+            <p>APR ranges from 5.99% to 35.99% depending on creditworthiness, loan amount, and lender terms.</p>
           </div>
         </div>
       </footer>

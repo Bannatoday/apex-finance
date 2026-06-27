@@ -18,7 +18,7 @@ export default function Privacy() {
         <div className="max-w-4xl mx-auto px-4">
           <div className="bg-white rounded-2xl shadow-sm border border-border/50 p-8 sm:p-12 prose max-w-none">
             <h2 className="font-heading text-dark">1. Introduction</h2>
-            <p>Apex Finance ("Company," "we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our loan brokerage services.</p>
+            <p>Apex Finance LLC ("Company," "we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our loan matching services. Apex Finance LLC is not a lender. We are a free loan matching service that connects borrowers with a network of licensed lenders.</p>
 
             <h2 className="font-heading text-dark">2. Information We Collect</h2>
             <h3 className="font-heading text-dark">Personal Information</h3>
@@ -51,7 +51,7 @@ export default function Privacy() {
             <h2 className="font-heading text-dark">4. Information Sharing</h2>
             <p>We may share your information with:</p>
             <ul>
-              <li><strong>Lending Partners:</strong> To process your loan application</li>
+              <li><strong>Lending Partners:</strong> To process your loan application. By submitting an application, you consent to your personal and financial information being shared with one or more third-party lending partners in our network for the purpose of evaluating your eligibility for loan products. Each lending partner has their own privacy policy governing how they use your data.</li>
               <li><strong>Service Providers:</strong> Third parties who assist in operating our business</li>
               <li><strong>Legal Requirements:</strong> When required by law, regulation, or legal process</li>
               <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets</li>

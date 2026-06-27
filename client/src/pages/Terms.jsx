@@ -21,7 +21,7 @@ export default function Terms() {
             <p>By accessing or using the website and services of Apex Finance ("Company"), you agree to be bound by these Terms and Conditions. If you do not agree, please do not use our services.</p>
 
             <h2 className="font-heading text-dark">2. Services Description</h2>
-            <p>Apex Finance is a loan brokerage firm that connects borrowers with qualified lending partners. We are NOT a direct lender. Our role is to facilitate the loan process by matching you with lenders based on your financial profile and needs.</p>
+            <p>Apex Finance LLC is a loan matching service that connects borrowers with a network of licensed lending partners. We are NOT a direct lender. We do not make credit decisions or issue loans. Our role is to facilitate the loan process by matching you with lenders based on your financial profile and needs. Loan approval, terms, and rates are determined solely by the lender. Not all applicants will qualify.</p>
 
             <h2 className="font-heading text-dark">3. Eligibility</h2>
             <p>To use our services, you must be at least 18 years of age, a U.S. resident, and legally capable of entering into binding contracts. You must provide accurate and complete information in your application.</p>
@@ -36,7 +36,10 @@ export default function Terms() {
             </ul>
 
             <h2 className="font-heading text-dark">5. Fees and Charges</h2>
-            <p>Apex Finance does not charge application fees or upfront fees for our brokerage services. Lending partners may charge origination fees, closing costs, or other fees as disclosed in your loan agreement. Always review all fees before accepting a loan offer.</p>
+            <p>Apex Finance LLC does not charge application fees or upfront fees for our loan matching services. Lending partners may charge origination fees, closing costs, or other fees as disclosed in your loan agreement. Always review all fees before accepting a loan offer.</p>
+
+            <h2 className="font-heading text-dark">5b. APR Disclosure</h2>
+            <p>APR (Annual Percentage Rate) for loans in our network typically ranges from 5.99% to 35.99%. Actual rates depend on creditworthiness, loan amount, loan term, and lender terms. The APR you receive may differ from advertised rates. Always review your loan offer carefully before accepting.</p>
 
             <h2 className="font-heading text-dark">6. Accuracy of Information</h2>
             <p>You agree to provide truthful, accurate, and complete information in your loan application. Providing false information may result in application denial and could constitute fraud under federal and state laws.</p>

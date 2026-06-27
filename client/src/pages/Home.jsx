@@ -17,7 +17,7 @@ const staggerContainer = {
 const stats = [
   { value: '$50M+', label: 'Loans Funded', icon: HiCurrencyDollar },
   { value: '1,000+', label: 'Happy Clients', icon: HiUserGroup },
-  { value: '95%', label: 'Approval Rate', icon: HiClipboardCheck },
+  { value: '95%', label: 'Satisfaction Rate', icon: HiClipboardCheck },
   { value: '5+', label: 'Years in Business', icon: HiClock },
 ];
 
@@ -32,8 +32,8 @@ const loanProducts = [
 
 const trustPoints = [
   { title: 'Licensed & Regulated', desc: 'Fully compliant with all federal and state lending regulations.', icon: HiShieldCheck },
-  { title: 'Fast Approval', desc: 'Get a decision within 24-48 hours. No weeks of waiting.', icon: HiClock },
-  { title: 'Competitive Rates', desc: 'We partner with top lenders to get you the best rates available.', icon: FaChartLine },
+  { title: 'Fast Decisions', desc: 'Get matched with lenders in minutes — not weeks of waiting.', icon: HiClock },
+  { title: 'Competitive Rates', desc: 'We connect you with licensed lenders offering competitive rates.', icon: FaChartLine },
   { title: 'Dedicated Support', desc: 'Personal loan advisors available 7 days a week to guide you.', icon: HiUserGroup },
   { title: 'Transparent Process', desc: 'No surprises. Clear terms, straightforward process from start to finish.', icon: HiEye },
   { title: 'No Hidden Fees', desc: 'What you see is what you get. Zero hidden charges or origination fees.', icon: HiCurrencyDollar },
@@ -73,7 +73,7 @@ const videoTestimonials = [
     location: 'New York, NY',
     loanType: 'Mortgage Loan',
     youtubeUrl: 'https://youtu.be/o19zLEznleM',
-    title: 'First-time homebuyer approved in 48 hours',
+    title: 'First-time homebuyer matched with a lender in 48 hours',
   },
   {
     name: 'Sarah Williams',
@@ -127,11 +127,11 @@ export default function Home() {
                 Licensed & Regulated | Trusted by Thousands
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight mb-6">
-                Fast, Trusted Loans for{' '}
-                <span className="text-secondary">Every Need</span>
+                Find the Right Loan —{' '}
+                <span className="text-secondary">Without the Runaround</span>
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-lg leading-relaxed">
-                From personal loans to mortgages, we connect you with top lenders offering competitive rates. Apply in minutes, get approved in hours.
+                We match you with licensed lenders in minutes. One form. Multiple offers. Zero obligation.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
@@ -149,6 +149,7 @@ export default function Home() {
                   Calculate EMI
                 </Link>
               </div>
+              <p className="text-xs text-gray-400 mt-4">Apex Finance LLC is a loan matching service, not a direct lender.</p>
             </motion.div>
 
             <motion.div
@@ -170,7 +171,7 @@ export default function Home() {
                   <div className="grid grid-cols-2 gap-4 mt-6">
                     <div className="bg-white/10 rounded-xl p-4 text-center">
                       <p className="text-2xl font-bold text-white">24hr</p>
-                      <p className="text-xs text-gray-300">Fast Approval</p>
+                      <p className="text-xs text-gray-300">Fast Matching</p>
                     </div>
                     <div className="bg-white/10 rounded-xl p-4 text-center">
                       <p className="text-2xl font-bold text-white">Zero</p>
@@ -489,11 +490,11 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-2 text-sm font-medium text-muted">
               <HiShieldCheck className="w-6 h-6 text-primary" />
-              <span>Equal Housing Lender</span>
+              <span>256-bit Encryption</span>
             </div>
             <div className="flex items-center gap-2 text-sm font-medium text-muted">
               <HiShieldCheck className="w-6 h-6 text-primary" />
-              <span>FDIC Insured Partners</span>
+              <span>Data Protected</span>
             </div>
           </div>
         </div>

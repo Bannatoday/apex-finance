@@ -16,7 +16,7 @@ const loans = [
     tenure: '12 — 60 months',
     eligibility: 'Credit score 600+, verifiable income',
     features: ['No collateral required', 'Fixed interest rates', 'Quick disbursement within 48 hours', 'Flexible repayment terms', 'No prepayment penalty'],
-    desc: 'Our personal loans cover any need — from medical bills and home improvements to weddings and vacations. Enjoy competitive rates with no collateral required.'
+    desc: 'Our lending partners offer personal loans for any need — from medical bills and home improvements to weddings and vacations. Competitive rates with no collateral required.'
   },
   {
     title: 'Business Loan',
@@ -27,7 +27,7 @@ const loans = [
     tenure: '12 — 84 months',
     eligibility: '1+ year in business, $100K+ annual revenue',
     features: ['Working capital financing', 'Equipment purchases', 'Business expansion funding', 'Line of credit options', 'SBA loan assistance'],
-    desc: 'Fuel your business growth with our competitive financing options. Whether you need working capital, equipment financing, or expansion funds.'
+    desc: 'Fuel your business growth with competitive financing options. Whether you need working capital, equipment financing, or expansion funds — we connect you with the right lender.'
   },
   {
     title: 'Mortgage Loan',
@@ -38,7 +38,7 @@ const loans = [
     tenure: '120 — 360 months',
     eligibility: 'Credit score 620+, 3% minimum down payment',
     features: ['Fixed & adjustable rates', 'FHA & VA loan options', 'First-time buyer programs', 'Refinancing available', 'Rate lock guarantee'],
-    desc: 'Make your dream home a reality. We offer fixed and adjustable-rate mortgages with competitive terms for first-time and experienced buyers.'
+    desc: 'Make your dream home a reality. Our lender network offers fixed and adjustable-rate mortgages with competitive terms for first-time and experienced buyers.'
   },
   {
     title: 'Auto Loan',
@@ -84,7 +84,7 @@ export default function Loans() {
           <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
             <span className="inline-block text-secondary font-semibold text-sm tracking-wider uppercase mb-3">Our Products</span>
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-white mb-6">Loan Products</h1>
-            <p className="text-gray-300 max-w-2xl mx-auto text-lg">Comprehensive financing solutions tailored to your goals. Compare our loan products and find the one that's right for you.</p>
+            <p className="text-gray-300 max-w-2xl mx-auto text-lg">Compare loan products from our network of licensed lenders. Find the option that fits your goals.</p>
           </motion.div>
         </div>
       </section>

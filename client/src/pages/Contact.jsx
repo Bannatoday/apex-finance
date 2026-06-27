@@ -58,6 +58,7 @@ export default function Contact() {
                   {sending ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
+              <p className="text-xs text-muted mt-4 leading-relaxed">Apex Finance LLC is a loan matching service, not a direct lender. We do not make credit decisions or guarantee loan approval.</p>
             </motion.div>
 
             <motion.div className="space-y-6" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}>

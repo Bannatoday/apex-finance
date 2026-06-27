@@ -360,13 +360,16 @@ export default function Apply() {
                 Next <HiArrowRight className="w-4 h-4" />
               </button>
             ) : (
-              <button
-                onClick={handleSubmit}
-                disabled={submitting}
-                className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-accent to-accent-dark text-white font-semibold rounded-xl hover:shadow-lg transition-all text-sm disabled:opacity-50"
-              >
-                {submitting ? 'Submitting...' : 'Submit Application'}
-              </button>
+              <div className="text-right">
+                <p className="text-xs text-muted mb-3 max-w-sm ml-auto leading-relaxed">By submitting this form, you agree to be contacted by Apex Finance LLC and its lending partners. We are not a lender. Submitting does not guarantee loan approval.</p>
+                <button
+                  onClick={handleSubmit}
+                  disabled={submitting}
+                  className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-accent to-accent-dark text-white font-semibold rounded-xl hover:shadow-lg transition-all text-sm disabled:opacity-50 ml-auto"
+                >
+                  {submitting ? 'Submitting...' : 'Submit Application'}
+                </button>
+              </div>
             )}
           </div>
         </div>
