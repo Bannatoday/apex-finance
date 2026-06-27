@@ -46,7 +46,7 @@ export default function Settings() {
           <h3 className="font-heading font-semibold text-dark mb-4">Company Information</h3>
           <div className="space-y-4">
             <div><label className="block text-sm font-medium text-dark mb-2">Company Name</label><input className={inputClass} defaultValue="Apex Finance" /></div>
-            <div><label className="block text-sm font-medium text-dark mb-2">Phone</label><input className={inputClass} defaultValue="(212) 555-1234" /></div>
+            <div><label className="block text-sm font-medium text-dark mb-2">Phone</label><input className={inputClass} defaultValue="(845) 241-2429" /></div>
             <div><label className="block text-sm font-medium text-dark mb-2">Email</label><input className={inputClass} defaultValue="info@apexfinance.com" /></div>
             <div><label className="block text-sm font-medium text-dark mb-2">Address</label><textarea rows="2" className={inputClass} defaultValue="123 Financial District, Suite 500, New York, NY 10004" /></div>
             <button className="px-6 py-2.5 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark text-sm">Save Changes</button>

@@ -52,7 +52,7 @@ export default function Disclaimer() {
               123 Financial District, Suite 500<br />
               New York, NY 10004<br />
               Email: legal@apexfinancellc.com<br />
-              Phone: (212) 555-1234
+              Phone: (845) 241-2429
             </p>
 
             <div className="mt-8 pt-6 border-t border-border/50">

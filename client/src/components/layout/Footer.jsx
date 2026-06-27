@@ -94,7 +94,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <FaPhone className="w-4 h-4 text-secondary shrink-0" />
-                <a href="tel:+12125551234" className="text-gray-400 hover:text-secondary text-sm transition-colors">(212) 555-1234</a>
+                <a href="tel:+18452412429" className="text-gray-400 hover:text-secondary text-sm transition-colors">(845) 241-2429</a>
               </li>
               <li className="flex items-center gap-3">
                 <FaEnvelope className="w-4 h-4 text-secondary shrink-0" />
