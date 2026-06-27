@@ -64,7 +64,7 @@ export default function Terms() {
 
             <h2 className="font-heading text-dark">13. Contact</h2>
             <p>For questions about these Terms and Conditions:</p>
-            <p>Apex Finance<br />123 Financial District, Suite 500<br />New York, NY 10004<br />Email: legal@apexfinancellc.com<br />Phone: (845) 241-2429</p>
+            <p>Apex Finance<br />1900 N. Akard Street, 5th Floor<br />Dallas, TX 75201<br />Email: legal@apexfinancellc.com<br />Phone: (845) 241-2429</p>
           </div>
         </div>
       </section>

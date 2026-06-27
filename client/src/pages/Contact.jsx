@@ -63,7 +63,7 @@ export default function Contact() {
 
             <motion.div className="space-y-6" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}>
               {[
-                { icon: FaMapMarkerAlt, title: 'Office Address', lines: ['123 Financial District', 'Suite 500', 'New York, NY 10004'] },
+                { icon: FaMapMarkerAlt, title: 'Office Address', lines: ['1900 N. Akard Street', '5th Floor', 'Dallas, TX 75201'] },
                 { icon: FaPhone, title: 'Phone', lines: ['(845) 241-2429', 'Mon-Fri, 9am-6pm EST'] },
                 { icon: FaEnvelope, title: 'Email', lines: ['info@apexfinancellc.com', 'support@apexfinancellc.com'] },
                 { icon: FaClock, title: 'Business Hours', lines: ['Monday–Friday: 9:00 AM – 6:00 PM', 'Saturday: 10:00 AM – 2:00 PM', 'Sunday: Closed'] },

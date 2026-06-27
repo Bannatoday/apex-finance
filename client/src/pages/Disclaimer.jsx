@@ -49,8 +49,8 @@ export default function Disclaimer() {
             <p>For questions about this disclaimer or our services:</p>
             <p>
               Apex Finance LLC<br />
-              123 Financial District, Suite 500<br />
-              New York, NY 10004<br />
+              1900 N. Akard Street, 5th Floor<br />
+              Dallas, TX 75201<br />
               Email: legal@apexfinancellc.com<br />
               Phone: (845) 241-2429
             </p>

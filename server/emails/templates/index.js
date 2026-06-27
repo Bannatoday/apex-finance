@@ -34,7 +34,7 @@ const baseTemplate = (content) => `
     <div class="footer">
       <p><strong>Apex Finance LLC</strong></p>
       <p>NMLS# 123456 | Not a lender. We connect borrowers with lenders.</p>
-      <p>123 Financial District, Suite 500, New York, NY 10004</p>
+      <p>1900 N. Akard Street, 5th Floor, Dallas, TX 75201</p>
       <div class="divider" style="background:#333; margin: 15px 0;"></div>
       <p>
         <a href="${process.env.CLIENT_URL || 'http://localhost:5173'}">Website</a> |
