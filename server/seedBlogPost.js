@@ -28,6 +28,8 @@ const seedDebtPost = async () => {
 
 <p>If you're making minimum payments on your credit cards every month, you're probably aware it feels like you're not making much progress. But here's the part most people don't realize: you may be paying thousands of dollars more than you have to — not because of the debt itself, but because of the interest rate attached to it.</p>
 
+<figure style="margin: 32px 0; border-radius: 12px; overflow: hidden;"><img src="/blog-debt-hero.png" alt="Credit card bills and calculator on a desk — understanding your debt" style="width: 100%; height: auto; display: block; border-radius: 12px;" /></figure>
+
 <p>The average credit card in America currently carries an APR between 21% and 27%. Meanwhile, a debt consolidation loan — available to a much wider range of credit profiles than most people assume — is available with rates starting from as low as 4.5% APR*. That gap is where most of your money is going every single month.</p>
 
 <blockquote><strong>The average US household pays $1,380 in credit card interest every year<sup>1</sup> — most of which can be eliminated through consolidation.</strong></blockquote>
@@ -39,6 +41,8 @@ const seedDebtPost = async () => {
 <p>This isn't an accident. Credit card minimum payments are calculated specifically to keep you in debt longer. It's one of the most profitable mechanisms in consumer finance.</p>
 
 <h2>What debt consolidation actually is — in plain terms</h2>
+
+<figure style="margin: 32px 0; border-radius: 12px; overflow: hidden;"><img src="/blog-debt-consolidation.png" alt="Debt consolidation concept — multiple payments becoming one" style="width: 100%; height: auto; display: block; border-radius: 12px;" /></figure>
 
 <p>A debt consolidation loan is simply a personal loan that you use to pay off all your existing credit card balances in one shot. Instead of paying three or four cards at 21–27% APR, you're now making one monthly payment on a single loan — with rates starting from as low as 4.5% APR*.</p>
 
@@ -82,6 +86,8 @@ const seedDebtPost = async () => {
 <p><strong>Step 3 — Funds pay off your cards directly.</strong> If you accept, funds are typically disbursed within 1–3 business days. Many lenders pay your creditors directly — you simply start making one lower monthly payment to the new lender.</p>
 
 <h2>The real cost of waiting</h2>
+
+<figure style="margin: 32px 0; border-radius: 12px; overflow: hidden;"><img src="/blog-debt-freedom.png" alt="Financial freedom after consolidating debt" style="width: 100%; height: auto; display: block; border-radius: 12px;" /></figure>
 
 <p>Every month you stay on minimum payments, the interest clock keeps running. On an $18,000 balance at 23% APR, you're paying roughly $345 in pure interest charges every single month. That money disappears — it doesn't reduce your balance, it doesn't build equity, it simply transfers to the card issuer.</p>
 
