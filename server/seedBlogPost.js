@@ -16,7 +16,7 @@ const seedDebtPost = async () => {
     }
 
     const post = new BlogPost({
-      title: "If You Owe More Than $10,000 in Credit Card Debt, Here's What Most Americans Don't Know",
+      title: "The Credit Card Debt Trap Most Americans Are Stuck In — And the Way Out",
       slug: 'credit-card-debt-consolidation-strategy',
       content: `<p class="blog-label"><strong>PERSONAL FINANCE · ADVERTORIAL · Updated June 2026</strong></p>
 
@@ -103,7 +103,7 @@ const seedDebtPost = async () => {
       status: 'published',
       publishedAt: new Date('2026-06-25'),
       seo: {
-        metaTitle: "Owe $10,000+ in Credit Card Debt? Here's What Most Americans Don't Know | Apex Finance",
+        metaTitle: "The Credit Card Debt Trap Most Americans Are Stuck In — And the Way Out | Apex Finance",
         metaDescription: "Discover how debt consolidation can save you $14,000+ in interest and cut 15 years off your payoff timeline. Free eligibility check — no credit impact."
       }
     });
